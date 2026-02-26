@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: Kubus565/GH_portfolio_1
+  branch: main
+
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  - name: "strony"
+    label: "Moje Podstrony"
+    folder: "src/pages"
+    create: true
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Tytuł", name: "title", widget: "string" }
+      - { label: "Data", name: "date", widget: "datetime" }
+      - { label: "Treść", name: "body", widget: "markdown" }
